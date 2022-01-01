@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+/* navbar styling */
+.header{
+  background-image:url('back.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: space-around;
+  flex-direction: row;
+  overflow: hidden;
+}
+.text{
+  position: relative;
+  text-align: center;
+}
+.text h1{
+  font-size: 80px;
+}
+.text::after{
+  content: "";
+  position: absolute;
+  width:100% ;
+  height: 2px;
+  background: grey;
+  bottom:0;
+  left: 0;
+}
+.clock{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+.clock-details{
+  display: flex;
+}
+.box{
+  padding: 10px 10px;
+  margin-right:10px;
+  font-size: 50px;
+}
+.box:last-child{
+  margin-right: 0px;
+}
+.Date{
+  width: 100%;
+  line-height: 35px;
+  text-align: center;
+  background:rgba(25,25,25,0.8);
+  margin-top: 20px;
+  color:#fff;
+  font-size: 60px;
+  padding: 10px 10px;
+}
+.hour{
+   background: #52D017;
+}
+.min{
+  background: #191970;
+}
+.sec{
+   background: #FF5733;
+}
+.apm{
+   background: #E9AB17;
+}
+@media only screen and (max-width:720px) {
+  .header{
+    flex-direction: column;
+  }
+  .clock-details{
+    margin-top: 20px;
+  }
+  .Date{
+    font-size: 30px;
+  }
+  .box{
+    font-style: 25px;
+  }
+  .text h1{
+    font-size: 65px;
+  }
+  .clock{
+    margin-left: 0;
+  }
+}
