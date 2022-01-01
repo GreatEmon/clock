@@ -80,9 +80,7 @@
   .header{
     flex-direction: column;
   }
-  .text h1{
-    font-size: 4rem;
-}
+
   .clock-details{
     margin-top: 20px;
   }
